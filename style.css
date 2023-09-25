@@ -1,0 +1,35 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: 0;
+}
+
+.display .num {
+  border: 0;
+  background-color: #000;
+  width: 100vw;
+  color: #fff;
+  text-align: right;
+  line-height: 10vh;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.buttons button:nth-child(16) {
+  grid-row: span 2;
+}
+
+.buttons button:nth-child(17) {
+  grid-column: span 2;
+}
